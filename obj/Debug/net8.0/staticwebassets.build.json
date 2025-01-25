@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "TDmKySjlJ7SLcoYGGNNaVIZdYtPS2VUZ8DZKyK9FNfc=",
+  "Source": "WebActorScraper",
+  "BasePath": "_content/WebActorScraper",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

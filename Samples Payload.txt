@@ -1,0 +1,82 @@
+GET /api/Actor
+Request URL:
+https://localhost:7013/api/Actor?minRank=22&maxRank=24&provider=imdb&page=1&pageSize=10
+
+Response body: (200)
+{
+  "total": 3,
+  "actors": [
+    {
+      "id": "e2e3eef8-6dbb-4dc2-8011-6930ccdfe11e",
+      "name": "Christian Bale"
+    },
+    {
+      "id": "7b8df3d7-3369-4eb0-a05c-0e0b381ede51",
+      "name": "Naseeruddin Shah"
+    },
+    {
+      "id": "d068b0af-5166-4f1a-b213-425f4f058518",
+      "name": "George Clooney"
+    }
+  ]
+}
+
+POST /api/Actor:
+Request body:
+{
+  "name": "brad pitt",
+  "details": "string",
+  "type": "actor",
+  "rank": 103,
+  "provider": "imdb"
+}
+Response body: (201)
+{
+  "id": "6f003331-7dfa-47a6-9cdf-6119366b21c8",
+  "name": "brad pitt",
+  "details": "string",
+  "type": "actor",
+  "rank": 103,
+  "provider": "imdb"
+}
+
+GET /api/Actor/{id}
+Requet URL:
+https://localhost:7013/api/Actor/d068b0af-5166-4f1a-b213-425f4f058518
+
+Response body (200):
+{
+  "name": "George Clooney",
+  "details": "Clooney made his acting debut on television in 1978, and later gained wide recognition in his role as Dr. Douglas &quot;Doug&quot; Ross on the long-running medical drama ER from 1994 to 1999, for which he received two Emmy Award nominations. While working on ER, he began attracting a variety of leading roles in films, including Batman &amp; Robin (1997) and Out of Sight (1998), in which he first worked with long-term collaborator Steven Soderbergh. In 1999 Clooney took the lead role in Three Kings, a well-received war satire set during the Gulf War. In 2001, Clooney&#39;s fame widened with the release of his biggest commercial success, Ocean&#39;s Eleven, the first of a profitable film trilogy, a remake of the 1960 film which starred members of the Rat Pack with Frank Sinatra as Danny Ocean. He made his directorial debut a year later with the 2002 biographical thriller Confessions of a Dangerous Mind, and has since directed Good Night, and Good Luck (2005), Leatherheads (2008), and The Ides of March (2011). He won an Academy Award for Best Supporting Actor for his role in the Middle East thriller Syriana (2005) and subsequently gained Best Actor nominations for such films as Michael Clayton (2007), Up in the Air (2009) and The Descendants (2011). In 2013, he received the Academy Award for Best Picture for producing the film Argo, alongside Ben Affleck and Grant Heslov. He is the only person to ever be nominated for Academy Awards in six different categories.",
+  "type": "Actor",
+  "rank": 24,
+  "provider": "IMDB"
+}
+
+PUT
+Request URL
+https://localhost:7013/api/Actor/d068b0af-5166-4f1a-b213-425f4f058518
+
+Request body
+{
+  "id": "",
+  "name": "George Clooney",
+  "details": "",
+  "type": "",
+  "rank": 101,
+  "provider": ""
+}
+Server Response: 204
+
+DELETE
+Request URL:
+https://localhost:7013/api/Actor/d068b0af-5166-4f1a-b213-425f4f058518
+
+Server Response: 204
+
+GET /api/Actor/{id}
+Requet URL:
+https://localhost:7013/api/Actor/d068b0af-5166-4f1a-b213-425f4f058518
+
+Server Response: 404
+Actor not found
