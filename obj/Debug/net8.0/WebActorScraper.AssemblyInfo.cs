@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebActorScraper")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2b3babe56ef3407cf0a3dad0a901cd912475fa52")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6c39c39f5625aa7b1d9d550afa23dd0ac97aafaf")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebActorScraper")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebActorScraper")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

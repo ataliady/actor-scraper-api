@@ -1,4 +1,6 @@
 ﻿using HtmlAgilityPack;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
 using System.Text.RegularExpressions;
 using WebActorScraper.Models;
 
@@ -10,16 +12,25 @@ namespace WebActorScraper.Services
 		{
 			string url = "https://www.imdb.com/list/ls054840033/";
 			var actors = new List<Actor>();
-			var web = new HtmlWeb();
-			web.PreRequest = request =>
-			{
-				request.Headers["User-Agent"] = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36";
-				return true;
-			};
-			var document = web.Load(url);
-			var rawHtml = document.DocumentNode.OuterHtml;
-			System.IO.File.WriteAllText("debug.html", rawHtml);
+
+			var options = new ChromeOptions();
+			options.AddArgument("--headless");
+			options.AddArgument("--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36");
+			IWebDriver driver = new ChromeDriver(options);
+			driver.Navigate().GoToUrl(url);
+			string pageSource = driver.PageSource;
+			driver.Quit();
+
+			HtmlDocument document = new HtmlDocument();
+			document.LoadHtml(pageSource);	
 			var nodes = document.DocumentNode.SelectNodes("//li[@class='ipc-metadata-list-summary-item']");
+
+			#region Raw html
+			//var web = new HtmlWeb();
+			//var document = web.Load(url);
+			//var rawHtml = document.DocumentNode.OuterHtml;
+			//System.IO.File.WriteAllText("debug.html", rawHtml);
+			#endregion
 
 			if (nodes != null)
 			{
