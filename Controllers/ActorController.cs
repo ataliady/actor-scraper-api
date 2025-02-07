@@ -105,18 +105,15 @@ namespace WebActorScraper.Controllers
 			if (_dbContext.Actors.Any(a => a.Rank == updatedActor.Rank && a.Id != updatedActor.Id))
 				return BadRequest("Duplicated rank");
 
+			//If values are given, apply them
 			if (!string.IsNullOrEmpty(updatedActor.Name))
 				actor.Name = updatedActor.Name;
-
 			if (!string.IsNullOrEmpty(updatedActor.Details))
 				actor.Details = updatedActor.Details;
-
 			if (!string.IsNullOrEmpty(updatedActor.Type))
 				actor.Type = updatedActor.Type;
-
 			if (!string.IsNullOrEmpty(updatedActor.Provider))
 				actor.Provider = updatedActor.Provider;
-			
 			if (updatedActor.Rank != 0)
 				actor.Rank = updatedActor.Rank;
 

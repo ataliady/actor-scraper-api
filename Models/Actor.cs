@@ -8,12 +8,12 @@ namespace WebActorScraper.Models
 	{
 		//[Key] // Mark this as the primary key
 		//[JsonIgnore]
-		public string Id { get; set; }
+		public string? Id { get; set; }
 
-		public string Name { get; set; }
-		public string Details { get; set; }
-		public string Type { get; set; }
+		public string? Name { get; set; }
+		public string? Details { get; set; }
+		public string? Type { get; set; }
 		public int Rank { get; set; }
-		public string Provider { get; set; }
+		public string? Provider { get; set; }
 	}
 }
