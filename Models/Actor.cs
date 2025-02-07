@@ -6,8 +6,7 @@ namespace WebActorScraper.Models
 {
 	public class Actor
 	{
-		//[Key] // Mark this as the primary key
-		//[JsonIgnore]
+		[JsonIgnore]
 		public string? Id { get; set; }
 
 		public string? Name { get; set; }
