@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v8.0": {
       "WebActorScraper/1.0.0": {
         "dependencies": {
-          "HtmlAgilityPack": "1.11.72",
+          "HtmlAgilityPack": "1.11.46",
           "Microsoft.AspNetCore.JsonPatch": "9.0.1",
           "Microsoft.AspNetCore.OpenApi": "8.0.1",
           "Microsoft.EntityFrameworkCore.InMemory": "9.0.1",
@@ -20,11 +20,11 @@
           "WebActorScraper.dll": {}
         }
       },
-      "HtmlAgilityPack/1.11.72": {
+      "HtmlAgilityPack/1.11.46": {
         "runtime": {
           "lib/netstandard2.0/HtmlAgilityPack.dll": {
-            "assemblyVersion": "1.11.72.0",
-            "fileVersion": "1.11.72.0"
+            "assemblyVersion": "1.11.46.0",
+            "fileVersion": "1.11.46.0"
           }
         }
       },
@@ -289,12 +289,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "HtmlAgilityPack/1.11.72": {
+    "HtmlAgilityPack/1.11.46": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-RNLgXxTFdIGFI+o5l8c2aJ2L5StIRn9Uv8HKR76p7QP4ZUL26wzpWUCWh08xWUdkL2kocl+Xhv6VUu0rA1npVg==",
-      "path": "htmlagilitypack/1.11.72",
-      "hashPath": "htmlagilitypack.1.11.72.nupkg.sha512"
+      "sha512": "sha512-dLMn4EVfJBHWmWK4Uh0XGD76FPLHI0qr2Tm0s1m/xmgiHb1JUb9zB8AzO8HtrkBBlMN6JfCUBYddhqC0hZNR+g==",
+      "path": "htmlagilitypack/1.11.46",
+      "hashPath": "htmlagilitypack.1.11.46.nupkg.sha512"
     },
     "Microsoft.AspNetCore.JsonPatch/9.0.1": {
       "type": "package",

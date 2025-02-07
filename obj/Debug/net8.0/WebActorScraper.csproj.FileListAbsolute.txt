@@ -50,3 +50,4 @@ C:\Projects\WebActorScraper\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Projects\WebActorScraper\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Projects\WebActorScraper\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
 C:\Projects\WebActorScraper\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Projects\WebActorScraper\obj\Debug\net8.0\WebActorScraper.sourcelink.json
